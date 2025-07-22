@@ -31,7 +31,7 @@ const Home: React.FC = () => {
               </div>
               <h3>Maia Personal Assistant</h3>
               <p>Your AI-powered productivity companion. Leveraging advanced language models and adaptive learning, Maia Personal Assistant transforms how individuals manage tasks, information, and daily workflows.</p>
-              <a href="/products/maia-personal" className="learn-more">Learn More →</a>
+              <a href="https://www.myaiassistant.net" className="learn-more" target="_blank" rel="noopener noreferrer">Learn More →</a>
             </div>
             <div className="product-card">
               <div className="product-icon">
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
               </div>
               <h3>Maia Business Assistant</h3>
               <p>Enterprise-grade AI solutions that adapt to your business needs. From customer service automation to intelligent data analysis, we're helping businesses unlock the full potential of AI.</p>
-              <a href="/products/maia-business" className="learn-more">Learn More →</a>
+              <a href="https://www.myaiassistant.net" className="learn-more" target="_blank" rel="noopener noreferrer">Learn More →</a>
             </div>
             <div className="product-card">
               <div className="product-icon">

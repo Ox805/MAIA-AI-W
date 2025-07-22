@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
             <h4>Products</h4>
             <ul>
               <li><Link to="/products/edgeview">EdgeView Pickleball</Link></li>
-              <li><Link to="/products/maia-personal">Maia Personal</Link></li>
-              <li><Link to="/products/maia-business">Maia Business</Link></li>
+              <li><a href="https://myaiassistant.net/personal-assistant" target="_blank" rel="noopener noreferrer">Maia Personal</a></li>
+              <li><a href="https://myaiassistant.net/business-assistant-1" target="_blank" rel="noopener noreferrer">Maia Business</a></li>
             </ul>
           </div>
           

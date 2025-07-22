@@ -48,7 +48,7 @@ const Products: React.FC = () => {
                 </p>
                 <button 
                   className="btn-primary"
-                  onClick={() => window.open('https://www.myaiassistant.net', '_blank')}
+                  onClick={() => window.open('https://www.myaiassistant.net/personal-assistant', '_blank')}
                 >
                   View Detailed Information
                 </button>
@@ -85,7 +85,7 @@ const Products: React.FC = () => {
                 </p>
                 <button 
                   className="btn-primary"
-                  onClick={() => window.open('https://www.myaiassistant.net', '_blank')}
+                  onClick={() => window.open('https://www.myaiassistant.net/business-assistant-1', '_blank')}
                 >
                   View Detailed Information
                 </button>

@@ -16,53 +16,6 @@ const Products: React.FC = () => {
 
       <section className="product-details">
         <div className="container">
-          <div className="product-section" id="edgeview">
-            <div className="product-header">
-              <h2>EdgeView Sports Platform</h2>
-              <span className="product-status active">Active Development</span>
-            </div>
-            <div className="product-content">
-              <div className="product-description">
-                <h3>AI-Powered Sports Platform Starting with Pickleball</h3>
-                <p>
-                  EdgeView is our revolutionary sports technology platform that combines tournament 
-                  management with cutting-edge AI capabilities. Starting with pickleball and expanding 
-                  to multiple sports, we're democratizing professional-level sports analysis and 
-                  coaching through artificial intelligence.
-                </p>
-                <h4>Key Features:</h4>
-                <ul>
-                  <li>AI-powered video analysis with automated shot tracking</li>
-                  <li>Personalized coaching recommendations via machine learning</li>
-                  <li>Advanced performance analytics and progression tracking</li>
-                  <li>Intelligent tournament bracket generation and management</li>
-                  <li>Real-time match scoring and statistics</li>
-                  <li>Seamless integration with DUPR rating system</li>
-                  <li>Mobile-first design for on-court accessibility</li>
-                  <li>Multi-sport expansion capability (tennis, badminton, table tennis)</li>
-                </ul>
-                <h4>Target Market:</h4>
-                <p>
-                  Athletes across multiple sports seeking professional-level AI coaching, tournament 
-                  directors wanting advanced management tools, clubs looking to enhance member 
-                  experiences, and coaches who want data-driven insights to improve player performance.
-                </p>
-                <button 
-                  className="btn-primary"
-                  onClick={() => navigate('/products/edgeview')}
-                >
-                  View Detailed Information
-                </button>
-              </div>
-              <div className="product-image">
-                <div className="image-placeholder edgeview-img">
-                  <span>🏓</span>
-                  <p>EdgeView Platform</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div className="product-section" id="maia-personal">
             <div className="product-header">
               <h2>Maia Personal Assistant</h2>
@@ -70,10 +23,7 @@ const Products: React.FC = () => {
             </div>
             <div className="product-content reverse">
               <div className="product-image">
-                <div className="image-placeholder maia-personal-img">
-                  <span>🤖</span>
-                  <p>Personal AI Assistant</p>
-                </div>
+                <img src="/images/maia-personal-icon.jpg" alt="Maia Personal Assistant" className="product-detail-img" />
               </div>
               <div className="product-description">
                 <h3>Your Intelligent Productivity Companion</h3>
@@ -96,12 +46,12 @@ const Products: React.FC = () => {
                   Professionals, students, and individuals seeking to enhance their productivity 
                   through intelligent AI assistance.
                 </p>
-                <button 
+                {/* <button 
                   className="btn-primary"
                   onClick={() => navigate('/products/maia-personal')}
                 >
                   View Detailed Information
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -133,18 +83,59 @@ const Products: React.FC = () => {
                   Medium to large enterprises seeking to integrate AI into their operations, 
                   particularly in customer service, data analysis, and process automation.
                 </p>
-                <button 
+                {/* <button 
                   className="btn-primary"
                   onClick={() => navigate('/products/maia-business')}
                 >
                   View Detailed Information
-                </button>
+                </button> */}
               </div>
               <div className="product-image">
-                <div className="image-placeholder maia-business-img">
-                  <span>💼</span>
-                  <p>Business AI Platform</p>
-                </div>
+                <img src="/images/maia-business-icon.jpg" alt="Maia Business Assistant" className="product-detail-img" />
+              </div>
+            </div>
+          </div>
+
+          <div className="product-section" id="edgeview">
+            <div className="product-header">
+              <h2>EdgeView Sports Platform</h2>
+              <span className="product-status active">Active Development</span>
+            </div>
+            <div className="product-content reverse">
+              <div className="product-image">
+                <img src="/images/edgeview-icon.jpg" alt="EdgeView Sports Platform" className="product-detail-img" />
+              </div>
+              <div className="product-description">
+                <h3>AI-Powered Sports Platform Starting with Pickleball</h3>
+                <p>
+                  EdgeView is our revolutionary sports technology platform that combines tournament 
+                  management with cutting-edge AI capabilities. Starting with pickleball and expanding 
+                  to multiple sports, we're democratizing professional-level sports analysis and 
+                  coaching through artificial intelligence.
+                </p>
+                <h4>Key Features: <span className="development-note">(in development)</span></h4>
+                <ul>
+                  <li>AI-powered video analysis with automated shot tracking</li>
+                  <li>Personalized coaching recommendations via machine learning</li>
+                  <li>Advanced performance analytics and progression tracking</li>
+                  <li>Intelligent tournament bracket generation and management</li>
+                  <li>Real-time match scoring and statistics</li>
+                  <li>Seamless integration with DUPR rating system</li>
+                  <li>Mobile-first design for on-court accessibility</li>
+                  <li>Multi-sport expansion capability (tennis, badminton, table tennis)</li>
+                </ul>
+                <h4>Target Market:</h4>
+                <p>
+                  Athletes across multiple sports seeking professional-level AI coaching, tournament 
+                  directors wanting advanced management tools, clubs looking to enhance member 
+                  experiences, and coaches who want data-driven insights to improve player performance.
+                </p>
+                {/* <button 
+                  className="btn-primary"
+                  onClick={() => navigate('/products/edgeview')}
+                >
+                  View Detailed Information
+                </button> */}
               </div>
             </div>
           </div>
@@ -162,7 +153,10 @@ const Products: React.FC = () => {
             <p>Interested in partnering with us or learning about upcoming products?</p>
             <button 
               className="btn-secondary"
-              onClick={() => navigate('/contact')}
+              onClick={() => {
+                navigate('/contact');
+                window.scrollTo(0, 0);
+              }}
             >
               Get in Touch
             </button>

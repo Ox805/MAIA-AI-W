@@ -16,7 +16,7 @@ const About: React.FC = () => {
           <div className="story-content">
             <h2>Our Story</h2>
             <p>
-              Founded in 2023, Maia Technologies emerged from a simple observation: while AI technology 
+              Founded in 2024, Maia Technologies emerged from a simple observation: while AI technology 
               was advancing rapidly, many industries lacked the expertise and resources to 
               harness its transformative potential. We set out to bridge this gap.
             </p>
@@ -27,8 +27,8 @@ const About: React.FC = () => {
             </p>
             <p>
               Today, we operate as an innovation lab, developing multiple AI-powered solutions 
-              across different industries. From revolutionizing pickleball tournament management 
-              with EdgeView to creating intelligent assistants for personal and business use, 
+              across different industries. From innovations in tournament management and AI video 
+              coaching with EdgeView to creating intelligent assistants for personal and business use, 
               we're committed to building products that matter.
             </p>
           </div>
@@ -49,8 +49,8 @@ const About: React.FC = () => {
             <div className="mv-card">
               <h2>Our Vision</h2>
               <p>
-                To be the premier AI innovation lab, known for creating category-defining 
-                products that seamlessly integrate artificial intelligence into everyday life 
+                To be a premier AI innovation lab, known for creating category-defining 
+                products and businesses that seamlessly integrate artificial intelligence into everyday life 
                 and business operations.
               </p>
             </div>

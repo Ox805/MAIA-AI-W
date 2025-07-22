@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
             <h4>Company</h4>
             <ul>
               <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/team">Team</Link></li>
+              {/* <li><Link to="/team">Team</Link></li> */}
               <li><Link to="/contact">Contact</Link></li>
               <li><a href="/careers">Careers</a></li>
             </ul>
@@ -36,8 +36,8 @@ const Footer: React.FC = () => {
             <h4>Connect</h4>
             <ul>
               <li><a href="mailto:info@maiatech.ai">info@maiatech.ai</a></li>
-              <li><a href="https://linkedin.com/company/maia-technologies" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-              <li><a href="https://twitter.com/maiatech" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+              {/* <li><a href="https://linkedin.com/company/maia-technologies" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://twitter.com/maiatech" target="_blank" rel="noopener noreferrer">Twitter</a></li> */}
             </ul>
           </div>
         </div>

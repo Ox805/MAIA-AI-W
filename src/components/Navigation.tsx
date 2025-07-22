@@ -63,7 +63,7 @@ const Navigation: React.FC = () => {
               Our Products
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link 
               to="/team" 
               className={isActive('/team')}
@@ -71,7 +71,7 @@ const Navigation: React.FC = () => {
             >
               Team
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link 
               to="/contact" 

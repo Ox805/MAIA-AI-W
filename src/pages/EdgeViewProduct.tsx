@@ -45,7 +45,7 @@ const EdgeViewProduct: React.FC = () => {
                 <p>Target Players</p>
               </div>
               <div className="stat-card">
-                <h3>Q1 2025</h3>
+                <h3>Q3 2025</h3>
                 <p>Full Launch</p>
               </div>
             </div>
@@ -57,14 +57,14 @@ const EdgeViewProduct: React.FC = () => {
         <div className="container">
           <h2>Platform Features</h2>
           <div className="features-grid">
-            <div className="feature-card">
+            {/* <div className="feature-card">
               <div className="feature-icon">📊</div>
               <h3>DUPR Integration</h3>
               <p>
                 Seamless integration with DUPR rating system for accurate player matching 
                 and automatic rating updates after tournament matches.
               </p>
-            </div>
+            </div> */}
             <div className="feature-card">
               <div className="feature-icon">🏆</div>
               <h3>Smart Bracket Management</h3>
@@ -125,7 +125,7 @@ const EdgeViewProduct: React.FC = () => {
         </div>
       </section>
 
-      <section className="dupr-partnership">
+      {/* <section className="dupr-partnership">
         <div className="container">
           <h2>DUPR Partnership Benefits</h2>
           <div className="partnership-content">
@@ -170,7 +170,7 @@ const EdgeViewProduct: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="technical-architecture">
         <div className="container">
@@ -242,7 +242,7 @@ const EdgeViewProduct: React.FC = () => {
         </div>
       </section>
 
-      <section className="roadmap">
+      {/* <section className="roadmap">
         <div className="container">
           <h2>Development Roadmap</h2>
           <div className="timeline">
@@ -268,7 +268,7 @@ const EdgeViewProduct: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="cta-section">
         <div className="container">

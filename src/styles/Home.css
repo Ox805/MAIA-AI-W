@@ -22,10 +22,15 @@
   opacity: 0.9;
 }
 
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .hero-description {
   font-size: 1.1rem;
   line-height: 1.8;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
   max-width: 700px;
   opacity: 0.95;
 }
@@ -89,6 +94,16 @@
 .product-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+}
+
+.product-icon-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
 }
 
 .product-card h3 {

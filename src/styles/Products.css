@@ -136,6 +136,21 @@
   margin: 0;
 }
 
+.product-detail-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.development-note {
+  font-style: italic;
+  color: #f59e0b;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
 .edgeview-img {
   background: linear-gradient(135deg, #e6fffa 0%, #f0f9ff 100%);
 }

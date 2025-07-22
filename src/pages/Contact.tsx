@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
 const Contact: React.FC = () => {
@@ -10,6 +11,9 @@ const Contact: React.FC = () => {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -17,11 +21,42 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    alert('Thank you for your interest! We\'ll be in touch soon.');
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      // EmailJS configuration
+      await emailjs.send(
+        'service_swi6amx',     // Your EmailJS service ID
+        'template_7pbj9pj',    // Your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          company: formData.company,
+          inquiry_type: formData.type,
+          message: formData.message,
+          to_name: 'Maia Technologies Team',
+        },
+        'DiJ2_UqcVKRzuKMBE'    // Your EmailJS public key
+      );
+
+      setSubmitStatus('success');
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        type: 'partnership',
+        message: ''
+      });
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -137,11 +172,30 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     rows={6}
                     required
-                    placeholder="Tell us about your interest in Maia AI and how we might work together..."
+                    placeholder="Tell us about your interest in Maia Technologies and how we might work together..."
+                    disabled={isSubmitting}
                   />
                 </div>
 
-                <button type="submit" className="btn-primary">Send Message</button>
+                {submitStatus === 'success' && (
+                  <div className="form-message success">
+                    ✓ Thank you! Your message has been sent successfully. We'll be in touch soon.
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="form-message error">
+                    ✗ Sorry, there was an error sending your message. Please try again or email us directly at info@maiatech.ai
+                  </div>
+                )}
+
+                <button 
+                  type="submit" 
+                  className="btn-primary" 
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
               </form>
             </div>
           </div>

@@ -26,22 +26,28 @@ const Home: React.FC = () => {
           <h2>Our Flagship Products</h2>
           <div className="products-grid">
             <div className="product-card">
-              <div className="product-icon">🏓</div>
-              <h3>EdgeView Sports Platform</h3>
-              <p>Revolutionary AI-powered sports platform starting with pickleball. EdgeView combines tournament management with cutting-edge video analysis, automated coaching, and performance analytics that democratize professional-level sports technology.</p>
-              <a href="/products/edgeview" className="learn-more">Learn More →</a>
-            </div>
-            <div className="product-card">
-              <div className="product-icon">🤖</div>
+              <div className="product-icon">
+                <img src="/images/maia-personal-icon.jpg" alt="Maia Personal Assistant" className="product-icon-img" />
+              </div>
               <h3>Maia Personal Assistant</h3>
               <p>Your AI-powered productivity companion. Leveraging advanced language models and adaptive learning, Maia Personal Assistant transforms how individuals manage tasks, information, and daily workflows.</p>
               <a href="/products/maia-personal" className="learn-more">Learn More →</a>
             </div>
             <div className="product-card">
-              <div className="product-icon">💼</div>
+              <div className="product-icon">
+                <img src="/images/maia-business-icon.jpg" alt="Maia Business Assistant" className="product-icon-img" />
+              </div>
               <h3>Maia Business Assistant</h3>
               <p>Enterprise-grade AI solutions that adapt to your business needs. From customer service automation to intelligent data analysis, we're helping businesses unlock the full potential of AI.</p>
               <a href="/products/maia-business" className="learn-more">Learn More →</a>
+            </div>
+            <div className="product-card">
+              <div className="product-icon">
+                <img src="/images/edgeview-icon.jpg" alt="EdgeView Sports Platform" className="product-icon-img" />
+              </div>
+              <h3>EdgeView Platform</h3>
+              <p>Revolutionary AI-powered sports platform starting with pickleball. EdgeView combines tournament management with cutting-edge video analysis, automated coaching, and performance analytics that democratize professional-level sports technology.</p>
+              <a href="/products/edgeview" className="learn-more">Learn More →</a>
             </div>
           </div>
         </div>
@@ -52,11 +58,11 @@ const Home: React.FC = () => {
           <div className="stats-grid">
             <div className="stat">
               <h3>Founded</h3>
-              <p>2023</p>
+              <p>2024</p>
             </div>
             <div className="stat">
               <h3>Experience</h3>
-              <p>20+ Years Combined</p>
+              <p>45+ Years Combined</p>
             </div>
             <div className="stat">
               <h3>Products</h3>

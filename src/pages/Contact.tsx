@@ -82,16 +82,8 @@ const Contact: React.FC = () => {
               
               <div className="contact-methods">
                 <div className="contact-method">
-                  <h3>General Inquiries</h3>
-                  <p>info@maiatech.ai</p>
-                </div>
-                <div className="contact-method">
-                  <h3>Partnership Requests</h3>
-                  <p>partnerships@maiatech.ai</p>
-                </div>
-                <div className="contact-method">
-                  <h3>Media & Press</h3>
-                  <p>press@maiatech.ai</p>
+                  <h3>Contact Us</h3>
+                  <p>support@maiatech.ai</p>
                 </div>
               </div>
 

@@ -46,12 +46,12 @@ const Products: React.FC = () => {
                   Professionals, students, and individuals seeking to enhance their productivity 
                   through intelligent AI assistance.
                 </p>
-                {/* <button 
+                <button 
                   className="btn-primary"
-                  onClick={() => navigate('/products/maia-personal')}
+                  onClick={() => window.open('https://www.myaiassistant.net', '_blank')}
                 >
                   View Detailed Information
-                </button> */}
+                </button>
               </div>
             </div>
           </div>
@@ -83,12 +83,12 @@ const Products: React.FC = () => {
                   Medium to large enterprises seeking to integrate AI into their operations, 
                   particularly in customer service, data analysis, and process automation.
                 </p>
-                {/* <button 
+                <button 
                   className="btn-primary"
-                  onClick={() => navigate('/products/maia-business')}
+                  onClick={() => window.open('https://www.myaiassistant.net', '_blank')}
                 >
                   View Detailed Information
-                </button> */}
+                </button>
               </div>
               <div className="product-image">
                 <img src="/images/maia-business-icon.jpg" alt="Maia Business Assistant" className="product-detail-img" />
@@ -130,12 +130,12 @@ const Products: React.FC = () => {
                   directors wanting advanced management tools, clubs looking to enhance member 
                   experiences, and coaches who want data-driven insights to improve player performance.
                 </p>
-                {/* <button 
+                <button 
                   className="btn-primary"
                   onClick={() => navigate('/products/edgeview')}
                 >
                   View Detailed Information
-                </button> */}
+                </button>
               </div>
             </div>
           </div>
